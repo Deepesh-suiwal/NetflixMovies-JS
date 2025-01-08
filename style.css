@@ -9,7 +9,15 @@
     gap: 2px;
     overflow-x: scroll;
     overflow-y: hidden;
+    margin-bottom: 30px;
 }
 .movieWrapper::-webkit-scrollbar{
     display: none;
 }
+img{
+    width: 150px;
+    object-fit: contain;
+}
+
+
+

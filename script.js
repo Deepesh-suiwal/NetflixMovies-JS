@@ -14,7 +14,7 @@ for (let x in requests) {
     data.push(promise);
 }
 
-const finalData = await promise.all(data);
+const finalData = await Promise.all(data);
 displayData(finalData);
 
 function displayData(data) {
@@ -30,5 +30,11 @@ function displayData(data) {
             movieWrapper.append(parent);
         });
         document.querySelector("#" + updatedKeys[index]).append(movieWrapper);
-    })
+    });
+}
+async function getDataFromURL(url){
+    const response = await fetch(url);
+    console.log(response);
+    const result = await response.json();
+    return result;
 }

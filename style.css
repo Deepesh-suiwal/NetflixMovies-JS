@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.movieWrapper{
+    display: flex;
+    gap: 2px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.movieWrapper::-webkit-scrollbar{
+    display: none;
+}
